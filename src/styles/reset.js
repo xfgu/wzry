@@ -1,19 +1,20 @@
+import  {createGlobalStyle} from 'styled-components'
+export const Globalstyle = createGlobalStyle`
 /* 清除内外边距 */
-
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
-dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
-pre, /* text formatting elements 文本格式元素 */
-fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
-th, td { /* table elements 表格元素 */
+  dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+  pre, /* text formatting elements 文本格式元素 */
+  fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+  th, td { /* table elements 表格元素 */
   margin: 0;
   padding: 0;
 }
 
 /* 设置默认字体 */
 body,
-button, input, select, textarea { /* for ie */
+  button, input, select, textarea { /* for ie */
   /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
-  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+  font: 12px/1 Tahoma, Helvetica, Arial, "\\5b8b\\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
 }
 
 h1 {
@@ -103,16 +104,9 @@ hr {
 html {
   overflow-y: scroll;
 }
-
 * {
   box-sizing: border-box;
 }
+`
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
